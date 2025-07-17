@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ubicación</title>
+  <style>
+    .section-mapa {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    .columna {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .datos-ubicacion {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      font-family: sans-serif;
+    }
+
+    .datos-ubicacion h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .mapa iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .section-mapa {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="section-mapa">
+  <!-- Columna Izquierda: Datos -->
+  <div class="columna datos-ubicacion">
+    <h2>Cómo llegar</h2>
+    <p><strong>Distancia:</strong> 65 km desde Santiago</p>
+    <p><strong>Tiempo estimado:</strong> 1 hora en auto</p>
+    <p><strong>Dirección:</strong> Ruta 68, Curacaví, Región Metropolitana</p>
+    <p><strong>Transporte:</strong> Acceso por autopista, buses interurbanos y rutas rurales</p>
+  </div>
+
+  <!-- Columna Derecha: Mapa -->
+  <div class="columna mapa">
+    <a href="https://www.google.com/maps/dir/?api=1&destination=-33.396512,-71.158721" target="_blank">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13334.328070138042!2d-71.158721!3d-33.396512!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96625422f01dbcf7%3A0x84776f949bf9989c!2sCuracaví%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1623445271923"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
