@@ -391,7 +391,7 @@ input[type="password"],
 }
 /* 9.5 - Header Variation Two */
 .header-variation-two {
-  background-color:  #ffffff;
+  background-color:  #003366;
 }
 .header-variation-two .contact-number a,
 .header-variation-two .contact-number span {
@@ -404,7 +404,8 @@ input[type="password"],
   color: #b1b1b1;
 }
 .header-variation-two .main-menu > li > a {
-  color: #191c20;
+  /* color: #191c20; */
+    color: #ffffff;
 }
 .header-variation-two .main-menu > li:hover > a,
 .header-variation-two .main-menu > .current-menu-item > a {
